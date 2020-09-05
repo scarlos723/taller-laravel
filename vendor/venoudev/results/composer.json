@@ -1,0 +1,43 @@
+{
+    "name": "venoudev/results",
+    "description": "A package that gives awesome comunication on classes in your Laravel Application and gives your Api Rest awesomes powers and a great structure",
+    "authors": [
+        {
+            "name": "philipretl",
+            "email": "philipretl@gmail.com"
+        },
+        {
+            "name": "Nestor Mata",
+            "email": "nestor@profesional.co.cr"
+        }
+    ],
+    "require": {
+       "php": "^7.2.5",
+       "illuminate/http": "^7.0",
+       "illuminate/support": "^7.0",
+       "illuminate/console": "^7.0"
+   },
+   "require-dev": {
+       "orchestra/testbench": "^5.0",
+       "phpunit/phpunit": "^9.0"
+   },
+    "autoload": {
+        "psr-4": {
+            "Venoudev\\Results\\": "src/"
+        },
+        "classmap": [
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Venoudev\\Results\\ResultsServiceProvider"
+            ], 
+            "aliases": {
+                "ResultManager": "Venoudev\\Results\\Facades\\ResultManagerFacade"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "license": "MIT"
+}
